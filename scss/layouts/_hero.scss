@@ -1,0 +1,30 @@
+.hero {
+    background-color: var(--bg-primer-color);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 8.25rem;
+    }
+
+    &__content {
+        max-width: 34.375rem;
+    }
+}
+.content-hero {
+    display: grid;
+    justify-items: start;
+    gap: 1.6875rem;
+
+    &__title {
+        color: var(--title-color);
+        font-size: 3rem;
+        font-weight: 800;
+
+        span {
+            color: var(--accent-color);
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--white-color);
+
+    &__top {
+        position: relative;
+
+        min-width: 22.125rem;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            left: 1.5625rem;
+            top: -1.5625rem;
+            width: 18.75rem;
+            height: 18.75rem;
+            background-image: url('./..//../img/icons/dashed-circle.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__top img {
+        width: 15.625rem;
+        height: 15.625rem;
+
+        margin-bottom: 4.25rem;
+    }
+
+    &__body {
+        flex-basis: 100%;
+    }
+
+    &__top h3 {
+        color: var(--title-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__link a {
+        color: var(--accent-color);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}

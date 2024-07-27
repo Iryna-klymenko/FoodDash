@@ -1,0 +1,20 @@
+@import './reset';
+@import './utils/vars';
+@import './base';
+
+// Components
+
+@import './components/button';
+@import './components/cards';
+@import './components/menu';
+@import './components/menu-card';
+
+// Layouts
+
+@import './layouts/delivery-offers';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/our-benefits';
+@import './layouts/our-coupon';
+@import './layouts/our-menu';

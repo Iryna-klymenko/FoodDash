@@ -1,0 +1,21 @@
+.our-coupon {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.625rem;
+
+        padding-top: 3.75rem;
+        padding-bottom: 7.5rem;
+    }
+
+    &__container img {
+        border-radius: 1.5rem;
+    }
+
+    &__right {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 1.625rem;
+    }
+}

@@ -1,0 +1,22 @@
+:root {
+    --title-color: #2a2a2a;
+    --text-color: #2a2a2a;
+    --text-grey-color: #939393;
+    --text-light-color: #b3b3b3;
+    --text-card-color: #68818b;
+    --accent-color: #ff7b2b;
+    --btn-color: #ff7b2b;
+    --bg-primer-color: #ffefe6;
+    --bg-color: #ffffff;
+
+    --border-radius-card: 180px 180px 30px 30px;
+    --border-radius-card-small: 16px;
+
+    --main-font: 'Lexend', sans-serif;
+    --second-font: 'Open Sans', sans-serif;
+    --card-pay-font: 'Poppins', sans-serif;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

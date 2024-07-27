@@ -1,0 +1,73 @@
+.button {
+    display: inline-block;
+
+    padding: 1rem 5rem;
+
+    border-radius: 3.125rem;
+    border: 0.125rem solid transparent;
+    background-color: var(--btn-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.25;
+    letter-spacing: 0.0156rem;
+
+    transition: all 0.2s ease-in;
+
+    &--light {
+        padding: 1rem 4.75rem;
+        background-color: inherit;
+        border: 0.125rem solid var(--btn-color);
+        color: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus {
+        border: 0.125rem solid var(--btn-color);
+        background-color: #fff;
+        color: var(--accent-color);
+    }
+
+    &:active {
+        border: 0.125rem solid var(--btn-color);
+        background-color: #fff;
+        color: var(--accent-color);
+    }
+}
+
+.button-menu {
+    display: inline-block;
+
+    padding: 16px 36px;
+
+    border-radius: 3.125rem;
+    border: 0.125rem solid transparent;
+    background-color: var(--btn-color);
+
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    transition: all 0.2s ease-in;
+
+    &--card {
+        padding: 16px 24px;
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:focus {
+        border: 0.125rem solid var(--btn-color);
+        background-color: #fff;
+        color: var(--accent-color);
+    }
+
+    &:active {
+        border: 0.125rem solid var(--btn-color);
+        background-color: #fff;
+        color: var(--accent-color);
+    }
+}

@@ -1,0 +1,102 @@
+.footer {
+    position: relative;
+    background-color: var(--bg-primer-color);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Ширина на всю ширину екрану */
+        height: 2px; /* Висота лінії */
+        background-image: url('./../../img/icons/line-footer.svg');
+        background-repeat: repeat-x; /* Повторення по горизонталі */
+    }
+
+    &__container {
+        padding-top: 5rem;
+        padding-bottom: 7.5rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__container span {
+        font-size: 2.25rem;
+        font-weight: 600;
+        color: var(--accent-color);
+    }
+
+    &__container a {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--text-grey-color);
+    }
+
+    &__container li {
+        list-style-type: none;
+    }
+
+    &__navigation {
+        flex-basis: 40%;
+    }
+
+    &__navigation-menu {
+        flex-basis: 60%;
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    &__info p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--text-grey-color);
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 2.1875rem;
+
+        margin-top: 2.25rem;
+    }
+
+    &__social-icons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__social span {
+        font-family: 'Wendy One';
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    &__menu,
+    &__information,
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__menu nav,
+    &__information nav,
+    &__contact address {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

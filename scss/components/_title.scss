@@ -1,0 +1,12 @@
+.title {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.title:not(:last-child) {
+    margin-bottom: 20px;
+}
