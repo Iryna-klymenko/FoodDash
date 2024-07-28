@@ -8,67 +8,80 @@
     padding: 24px;
     background-color: var(--bg-primer-color);
     border-radius: 16px;
-}
-.menu-card__photo {
-    position: relative;
 
-    &::before {
-        content: '';
+    &__top {
+        h3 {
+            color: var(--title-color);
+            font-size: 24px;
+            font-weight: 500;
+        }
 
-        position: absolute;
-        top: -148px;
-        left: 85%;
-        width: 250px;
-        height: 250px;
-        background-image: url('./..//../img/icons/dashed-circle-small.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        transform: translateX(-50%);
+        h3:first-of-type {
+            margin-top: 150px;
+        }
+
+        h3 + h3 {
+            margin-top: 8px;
+        }
+
+        span {
+            color: var(--accent-color);
+            font-size: 24px;
+            font-weight: 500;
+        }
     }
-}
-.menu-card__photo img {
-    position: absolute;
-    top: -125px;
-    left: 85%;
-    width: 200px;
-    height: 200px;
-    transform: translateX(-50%);
-}
-.menu-card__body {
-    margin-top: 150px;
-}
-.menu-card__info {
-}
-.menu-card__info h3 {
-    color: var(--title-color);
-    font-size: 24px;
-    font-weight: 500;
-}
-.menu-card__info span {
-    color: var(--accent-color);
-    font-size: 24px;
-    font-weight: 500;
-}
-.menu-card__rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
 
-    margin-top: 8px;
-}
-.menu-card__rating span {
-    color: var(--text-grey-color);
-    font-size: 24px;
-    font-weight: 400;
-}
-.menu-card__order {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    &__photo {
+        position: relative;
 
-    margin-top: 30px;
-}
-.menu-card__order strong {
-    font-size: 36px;
-    font-weight: 500;
+        &::before {
+            content: '';
+
+            position: absolute;
+            top: -148px;
+            left: 85%;
+            width: 250px;
+            height: 250px;
+            background-image: url('./..//../img/icons/dashed-circle-small.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateX(-50%);
+        }
+
+        img {
+            position: absolute;
+            top: -125px;
+            left: 85%;
+            width: 200px;
+            height: 200px;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        margin-top: 8px;
+
+        span {
+            color: var(--text-grey-color);
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+
+    &__order {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 30px;
+
+        strong {
+            font-size: 36px;
+            font-weight: 500;
+        }
+    }
 }

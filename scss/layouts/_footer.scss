@@ -20,22 +20,22 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-    }
 
-    &__container span {
-        font-size: 2.25rem;
-        font-weight: 600;
-        color: var(--accent-color);
-    }
+        span {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
 
-    &__container a {
-        font-size: 1.25rem;
-        font-weight: 400;
-        color: var(--text-grey-color);
-    }
+        a {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--text-grey-color);
+        }
 
-    &__container li {
-        list-style-type: none;
+        li {
+            list-style-type: none;
+        }
     }
 
     &__navigation {
@@ -56,12 +56,12 @@
         display: flex;
         flex-direction: column;
         gap: 1.875rem;
-    }
 
-    &__info p {
-        font-size: 1.25rem;
-        font-weight: 400;
-        color: var(--text-grey-color);
+        p {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--text-grey-color);
+        }
     }
 
     &__social {
@@ -70,6 +70,12 @@
         gap: 2.1875rem;
 
         margin-top: 2.25rem;
+
+        span {
+            font-family: 'Wendy One';
+            font-size: 2rem;
+            font-weight: 400;
+        }
     }
 
     &__social-icons {
@@ -78,12 +84,7 @@
         gap: 1rem;
     }
 
-    &__social span {
-        font-family: 'Wendy One';
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
+    &__social,
     &__menu,
     &__information,
     &__contact {

@@ -9,24 +9,24 @@
         align-items: center;
         justify-content: space-between;
         gap: 0.625rem;
-    }
 
-    &__description h2 {
-        max-width: 29.6875rem;
-        color: var(--title-color);
-        font-size: 3rem;
-        font-weight: 700;
-    }
+        h2 {
+            max-width: 29.6875rem;
+            color: var(--title-color);
+            font-size: 3rem;
+            font-weight: 700;
+        }
 
-    &__description h2 span {
-        color: var(--accent-color);
-    }
+        h2 span {
+            color: var(--accent-color);
+        }
 
-    &__description p {
-        max-width: 28.4375rem;
-        color: var(--text-light-color);
-        font-size: 1.25rem;
-        font-weight: 400;
+        p {
+            max-width: 28.4375rem;
+            color: var(--text-light-color);
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
     }
 
     &__cards {
