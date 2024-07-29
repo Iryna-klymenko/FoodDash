@@ -1,0 +1,30 @@
+.all-menu {
+    &__container {
+        padding-top: 50px;
+
+        h2 {
+            color: var(--title-color);
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+
+            margin-bottom: 40px;
+
+            span {
+                color: var(--accent-color);
+            }
+        }
+    }
+
+    &__cards {
+        margin-bottom: 100px;
+    }
+
+    &__cards {
+        display: grid;
+        justify-items: center;
+        column-gap: 100px;
+        row-gap: 100px;
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    }
+}

@@ -1,43 +1,42 @@
 .marquee {
+    display: flex;
+    justify-content: flex-start;
     overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    width: 100%; /* Можеш встановити бажану ширину */
-    background-color: var(--bg-primer-color); /* Приклад фону, можна змінити */
+    width: 100%;
+    background-color: var(--bg-primer-color);
+
+    &__content {
+        display: inline-block;
+        white-space: nowrap;
+        animation: slide 20s linear infinite;
+
+        span {
+            position: relative;
+            margin-right: 80px;
+
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 3.12;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 24px;
+                height: 24px;
+                background-image: url('./../../img/icons/star.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
 }
 
-.marquee-content {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll 20s linear infinite;
-}
-
-.marquee-content span {
-    display: inline-block;
-    position: relative;
-    margin-right: 80px; /* Відстань між словами */
-
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 3.12;
-}
-
-.marquee-content span::before {
-    content: '';
-    position: absolute;
-    left: -40px; /* Половина ширини зірочки */
-    top: 50%; /* Вирівнювання по центру контейнера */
-    transform: translateY(-50%); /* Вирівнювання по центру тексту */
-    width: 24px;
-    height: 24px;
-    background-image: url('./../../img/icons/star.svg');
-    background-repeat: no-repeat;
-    background-size: contain; /* Зміна розміру зображення, щоб воно повністю вміщалося */
-}
-
-@keyframes scroll {
+@keyframes slide {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
